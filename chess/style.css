@@ -1,0 +1,64 @@
+*{
+    /* background-color: black; */
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.white_pieces{
+    display: flex;
+    width:40vw;
+    height:6vh;
+    border :2px solid black;   
+    margin: 20px auto;
+    font-size: 5vh; 
+}
+
+.black_pieces{
+    display: flex;
+    width:40vw;
+    height:6vh;
+    border :2px solid black;
+    margin: 20px auto; 
+    font-size: 5vh;
+}
+
+.chess_board {
+    display: grid;
+    /* This creates 8 equal columns and rows */
+    grid-template-columns: repeat(8, 10vh); 
+    grid-template-rows: repeat(8, 10vh);
+    
+    border: 5px solid black;
+    width: fit-content; /* Keeps the border tight around the squares */
+    margin: 20px auto;  /* Centers the board on the page */
+}
+
+/* This targets every div inside the board */
+.chess_board div {
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start; /* Centers text/pieces horizontally */
+    align-items: flex-end;     /* Centers text/pieces vertically */
+    font-size: 2vh;          /* Size of the coordinate text */
+    font-family: sans-serif;
+    box-sizing: border-box;  /* Prevents borders from growing the box */
+}
+
+/* .A4{ */
+    /* border:20x solid black; */
+    /* background-color: red; */
+/* } */
+
+.light-square { /* Changed _ to - */
+    background-color: #eeeed2;
+    border: 2px solid black;
+}
+
+.dark-square { /* Changed _ to - */
+    background-color: #769656;
+}
+
